@@ -1,5 +1,8 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
 
 func main()  {
 	// All printing ways
@@ -35,7 +38,34 @@ func main()  {
 		b2 int = 2
 		c2 int = 3
 	)
-	fmt.Println(student1, student2, a, b, true1, false2, a1,b1,c1,x,y,z,a2,b2,c2)
+
+	// constants 
+
+	const Pi = 3.14159
+	const (
+		Pi1 = 3.14159
+		Pi2 = 3.14159
+	)
+	const Pi3 int = 3
+	fmt.Println(student1, student2, a, b, true1, false2, a1,b1,c1,x,y,z,a2,b2,c2,Pi,Pi1,Pi2,Pi3)
+
+	// Array Syntax - var <name> = [<length]type{<values>} | <name> := [<length]type{<values>}
+	var arr = [4]int{1,2,3,4}
+	var arr2 = [...]int{2,3,1,6}
+
+	arr[0] = 10
+	arr3 := [2][3]int{{1,2,3},{4,5,6}}
+	fmt.Println(arr, arr2, arr3)
+	fmt.Println(arr[0:2])
+
+	// Array initialization
+	arr4 := []int{1,2,3,4} // Initialize with values
+	arr5 := [6]int{} // Initialize all elements with 0
+
+	arr6 := [5]int{3: 10,1: 20} // Initialize only specified elements
+
+	fmt.Println(arr4, arr5, arr6)
+	fmt.Println(len(arr4), cap(arr5)) // 1. Length, 2. Capacity: length of the underlying array
 }
 
 /*
