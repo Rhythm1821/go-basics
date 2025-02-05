@@ -66,6 +66,11 @@ func main()  {
 
 	fmt.Println(arr4, arr5, arr6)
 	fmt.Println(len(arr4), cap(arr5)) // 1. Length, 2. Capacity: length of the underlying array
+
+	// Slices syntax - slice_name := []datatype{values}
+	slice1 := []int{1,2,3,4}
+	slice2 := []string{"Hello", "World"}
+	fmt.Println(slice1, slice2)
 }
 
 /*
