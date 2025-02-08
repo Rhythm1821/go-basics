@@ -71,6 +71,10 @@ func main()  {
 	slice1 := []int{1,2,3,4}
 	slice2 := []string{"Hello", "World"}
 	fmt.Println(slice1, slice2)
+
+	// Append operation
+	slice1 = append(slice1, 5)
+	fmt.Println(slice1)
 }
 
 /*
